@@ -44,6 +44,14 @@
   width: 48%;
   margin-top: 25px;
   margin-left: 27%;
+      visibility: hidden;
+      opacity: 0;
+      transform: translate(0,50px);
+      &.animate {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, 0);
+      }
 }
 
 .image-2 {
