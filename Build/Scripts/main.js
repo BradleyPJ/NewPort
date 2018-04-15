@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  
+  
   //Animation
   $('.about').addClass('animate');
   $('.aboutcopy').delay(200).queue(function () {
@@ -15,4 +17,11 @@ $(document).ready(function () {
   $('.image').delay(200).queue(function () {
     $(this).addClass('animate');
   });
+
+  $('.galleryToggle').on('click', function (e) {
+    $('.gallery').toggleClass("displayTrue"); //you can list several class names 
+    e.preventDefault();
+ });
+
 });
+

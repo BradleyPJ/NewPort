@@ -29,11 +29,17 @@ body {
   color: #333;
 }
 
+.displayTrue {
+  opacity: 1 !important;
+  z-index: 1 !important;
+}
+
 img {
   max-width: 100%;
   vertical-align: middle;
   display: inline-block;
 }
 
+@import 'components/gallery.scss';
 @import 'components/sidewrapper.scss';
 @import 'components/contentwrapper.scss';

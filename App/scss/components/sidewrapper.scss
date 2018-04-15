@@ -226,3 +226,13 @@
     color: #3b5998;
   }
 }
+
+.link {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  font-family: 'Museosans 300', sans-serif;
+  color: #3b80fe;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+}
