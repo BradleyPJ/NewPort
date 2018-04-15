@@ -1,0 +1,135 @@
+.sidewrapper {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 552px;
+  bottom: 0px;
+  z-index: 0;
+  width: 40%;
+  height: 100%;
+  padding: 75px 85px 50px;
+  background-color: #fafafa;
+  background-image: -webkit-linear-gradient(270deg, #fafafa, #fafafa);
+  background-image: linear-gradient(180deg, #fafafa, #fafafa);
+}
+
+@media (max-width: 1096px) {
+  .sidewrapper {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding-right: 55px;
+    padding-left: 55px;
+  }
+  .aboutcontainer {
+    position: static !important;
+    bottom: auto !important;
+  }
+  .about {
+    margin-top: 75px;
+  }
+  .aboutcopy {
+    width: 100%;
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 700px) {
+  .aboutcontainer {
+    bottom: auto !important;
+  }
+}
+
+@media (max-width: 479px) {
+  .sidewrapper {
+    position: static;
+    width: 100%;
+    max-height: 400px;
+    padding: 25px 45px 75px;
+  }
+  .aboutcontainer {
+    position: static !important;
+    width: 100%;
+    left: auto !important;
+    right: auto !important;
+  }
+  .about {
+    width: auto;
+    margin-top: 35px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .image {
+    width: 75%;
+    margin-left: 15%;
+  }
+  .image-2 {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: -20px;
+    margin-left: 2%;
+  }
+}
+
+.aboutcontainer {
+  position: absolute;
+  left: 85px;
+  right: 0px;
+  bottom: 36%;
+  width: 65%;
+}
+
+.about {
+  display: flex;
+  width: auto;
+  height: auto;
+  margin-top: 0px;
+  font-family: 'Source Sans Pro 900', sans-serif;
+  color: #4a4a4a;
+  font-size: 40px;
+  line-height: 42px;
+}
+
+.aboutcopy {
+  opacity: 0.7;
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  font-family: 'Source Sans Pro 200', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.cb {
+  display: inline-block;
+  padding: 9px 15px;
+  background-color: #3898EC;
+  color: white;
+  border: 0;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.btn {
+  padding: 15px 65px;
+  background-color: #3b80fe;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  font-family: 'Source Sans Pro 100', sans-serif;
+  font-size: 16px;
+  &:hover {
+    background-color: #1660e7;
+    box-shadow: 0 16px 32px -6px rgba(0, 0, 0, .2);
+  }
+}
