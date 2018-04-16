@@ -24,6 +24,12 @@
   display: inline;
 }
 
+@media (min-width: 250px) {
+  .grid-item {
+    width: 100%;
+  }
+}
+
 @media (min-width: 500px) {
   .grid-item {
     width: 50%;

@@ -29,16 +29,10 @@
 }
 
 .god2 {
-  padding: 45px 65px;
-  background-image: -webkit-linear-gradient(270deg, #b4ddbf, #b4ddbf);
-  background-image: linear-gradient(180deg, #b4ddbf, #b4ddbf);
+  padding: 65px 45px;
+background-image: linear-gradient(180deg, #b4ddbf, #b4ddbf);
 }
 
-.god3 {
-  padding: 45px 65px;
-  background-color: #4a4a4a;
-  color: #4a4a4a;
-}
 
 .image {
   width: 48%;
@@ -102,4 +96,32 @@
   text-decoration: none;
   cursor: pointer;
   border-radius: 0;
+}
+
+.imagewrap {
+  width: 100%;
+  height: auto;
+  background-color: #555;
+}
+
+.imageitem {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-bottom: 1px;
+  img {
+    width: 100%;
+  }
+}
+
+[id^="image-item-"] {
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(-50px, 0);
+  transition: opacity 500ms, transform 500ms;
+  &.animate {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, 0);
+  }
 }
