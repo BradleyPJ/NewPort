@@ -43,3 +43,26 @@ img {
 @import 'components/gallery.scss';
 @import 'components/sidewrapper.scss';
 @import 'components/contentwrapper.scss';
+
+//pages
+
+.porfoliosidewrapper {
+  margin-left: 60%;
+}
+
+.portfoliocontentwrapper {
+  margin: 0;
+}
+
+.demoBtn{
+  margin:20px 20px 0 0;
+}
+
+@import 'Pages/mention.scss';
+@import 'Pages/loginform-1.scss';
+
+@media (max-width: 1096px) {
+  .porfoliosidewrapper {
+    margin: 0;
+  }
+}
