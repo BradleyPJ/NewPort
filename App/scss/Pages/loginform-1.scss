@@ -11,6 +11,8 @@ body {
   margin: auto;
   padding: 25px;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .centerWrap{

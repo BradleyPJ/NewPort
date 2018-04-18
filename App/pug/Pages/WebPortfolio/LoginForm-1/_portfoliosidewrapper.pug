@@ -5,6 +5,13 @@
 
     a(href="https://codepen.io/BradleyPJ/full/pVzeoM/").btn.cb DEMO
     br
-    a(href="/").btn.cb.demoBtn Next Demo
-    a(href="../Mention/").btn.cb.demoBtn Previous Demo
+    a(href="/").btn.cb.viewdemoBtn Next Demo
+    a(href="../Mention/").btn.cb.viewdemoBtn Previous Demo
     
+  .demoBtnContainer.w-clearfix
+    a.demoLink(href='../Mention/')
+      .leftDemoBtn.demoBtn
+        i.fas.fa-angle-left.demoArrows
+    a.demoLink(href='/')
+      .rightDemoBtn.demoBtn
+        i.fas.fa-angle-right.demoArrows

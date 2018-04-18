@@ -5,5 +5,14 @@
 
     a(href="https://bradleypj.github.io/mention/Build/").btn.cb DEMO
     br
-    a(href="../LoginForm-1/").btn.cb.demoBtn Next Demo
-    a(href="/").btn.cb.demoBtn Previous Demo
+    a(href="../LoginForm-1/").btn.cb.viewdemoBtn Next Demo
+    a(href="/").btn.cb.viewdemoBtn Previous Demo
+
+  .demoBtnContainer.w-clearfix
+    a.demoLink(href='/')
+      .leftDemoBtn.demoBtn
+        i.fas.fa-angle-left.demoArrows
+    a.demoLink(href='../LoginForm-1/')
+      .rightDemoBtn.demoBtn
+        i.fas.fa-angle-right.demoArrows
+
