@@ -22,7 +22,7 @@
 body {
   margin: 0;
   min-height: 100%;
-  background-color: #fff;
+  background-color: #005ba9;
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -40,9 +40,10 @@ img {
   display: inline-block;
 }
 
-@import 'components/gallery.scss';
-@import 'components/sidewrapper.scss';
-@import 'components/contentwrapper.scss';
+@import 'components/gallery';
+@import 'components/sidewrapper';
+@import 'components/_contentwrapper';
+
 //pages
 .porfoliosidewrapper {
   margin-left: 60%;
@@ -58,8 +59,9 @@ img {
   margin: 20px 20px 0 0;
 }
 
-@import 'Pages/mention.scss';
-@import 'Pages/loginform-1.scss';
+@import 'Pages/mention';
+@import 'Pages/loginform-1';
+
 @media (max-width: 1096px) {
   .porfoliosidewrapper {
     margin: 0;
@@ -75,6 +77,7 @@ img {
   top: 85%;
   z-index: 1;
   transform: translateX(50%);
+
   @media (max-width: 1096px) {
     display: none
   }
@@ -91,19 +94,23 @@ img {
 }
 
 $size:45px;
+
 .leftDemoBtn {
   border-bottom-left-radius: $size * 2;
   border-top-left-radius: $size * 2;
   background-color: #fafafa;
   box-shadow: -22px 0px 111px -18px rgba(0, 0, 0, 0.75);
+
   .demoArrows {
     margin: 31px 0px 31px 15px;
     font-size: 38px;
     color: #4a4a4a;
   }
+
   &:hover {
     background-color: #1da1f2;
     box-shadow: -22px 0px 111px -18px rgba(0, 0, 0, 0.75);
+
     .demoArrows {
       color: #fff;
     }
@@ -114,14 +121,17 @@ $size:45px;
   border-bottom-right-radius: $size * 2;
   border-top-right-radius: $size * 2;
   background-color: #3b80fe;
+
   .demoArrows {
     margin: 31px 0px 31px 15px;
     font-size: 38px;
     color: #fafafa;
   }
+
   &:hover {
     background-color: #1da1f2;
     box-shadow: -22px 0px 111px -18px rgba(0, 0, 0, 0.75);
+
     .demoArrows {
       color: #fff;
     }
